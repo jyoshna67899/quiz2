@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QuizMaster CRT | Degree Placement Practice</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header><a class="brand" href="#"><b>Q</b> QuizMaster <span>CRT</span></a>
+<nav><a href="#practice">Practice</a><a href="#progress">Progress</a><button id="theme">☾</button></nav></header>
+<main>
+<section class="hero"><div><small>DEGREE STUDENT PLACEMENT PRACTICE</small><h1>Practice smarter.<br><em>Prepare for CRT.</em></h1>
+<p>Build speed and confidence with a large practice bank for English, General Knowledge, Programming Languages and aptitude-based CRT preparation.</p>
+<button class="primary" id="heroStart">Start Practice →</button>
+<div class="badges"><i>✓ 4 subjects</i><i>✓ 1,200+ each</i><i>✓ Easy → Hard</i><i>✓ Company-style</i></div></div>
+<aside><div class="count">4,800+</div><h2>Practice questions</h2><p>Timed tests, explanations, hints and supportive feedback.</p></aside></section>
+
+<section id="practice" class="panel"><div class="heading"><div><small>BUILD YOUR TEST</small><h2>Choose your practice set</h2><p>Company labels mean placement-practice style, not official or leaked company papers.</p></div><strong id="bankTotal"></strong></div>
+<div class="filters">
+<label>Subject<select id="subject"><option>All Subjects</option><option>English</option><option>General Knowledge</option><option>Programming Languages</option><option>CRT Aptitude</option></select></label>
+<label>Difficulty<select id="difficulty"><option>All Levels</option><option>Easy</option><option>Medium</option><option>Hard</option></select></label>
+<label>Company style<select id="company"><option>All Companies</option></select></label>
+<label>Questions<select id="amount"><option>10</option><option>25</option><option>50</option><option>100</option></select></label>
+</div>
+<div class="quick"><button data-s="English">English</button><button data-s="General Knowledge">General Knowledge</button><button data-s="Programming Languages">Programming</button><button data-s="CRT Aptitude">CRT Aptitude</button></div>
+<p id="match"></p><button class="primary" id="start">Start Selected Test →</button></section>
+
+<section id="quiz" class="panel hidden"><div class="quizhead"><div><small id="qsubject"></small><h2 id="qnum"></h2></div><div class="timer">⏱ <b id="time">30</b>s</div></div>
+<div class="bar"><i id="bar"></i></div><div class="tags"><span id="qcompany"></span><span id="qlevel"></span><span id="qtopic"></span></div>
+<div class="question"><h2 id="q"></h2><div id="options"></div><div id="feedback" class="feedback hidden"></div><button class="primary hidden" id="next">Next Question →</button></div></section>
+
+<section id="result" class="panel hidden result"><small>TEST COMPLETE</small><div class="emoji" id="emoji">🏆</div><h2 id="resultTitle"></h2><div class="score"><b id="score">0</b><small id="total"></small></div><p id="resultText"></p>
+<div class="stats"><div><b id="correct">0</b><small>Correct</small></div><div><b id="wrong">0</b><small>Wrong</small></div><div><b id="accuracy">0%</b><small>Accuracy</small></div><div><b id="best">0%</b><small>Best</small></div></div>
+<button class="primary" id="retry">Try Again</button> <button id="change">Change Test</button></section>
+
+<section id="progress" class="panel"><small>YOUR JOURNEY</small><h2>Performance dashboard</h2>
+<div class="stats dash"><div>🎯<b id="attempts">0</b><small>Tests</small></div><div>⭐<b id="high">0%</b><small>Best</small></div><div>📈<b id="avg">0%</b><small>Average</small></div><div>🔥<b id="strong">0</b><small>Strong tests</small></div></div><div id="history"></div></section>
+<section class="panel"><small>FOR DEGREE STUDENTS</small><h2>Placement-focused practice</h2><p>Use short timed tests, review explanations after mistakes, and gradually move from Easy to Medium and Hard. The company filter is for practice style only.</p></section>
+</main><footer>QuizMaster CRT <span>HTML • CSS • JavaScript • GitHub Pages</span></footer>
+<script src="questions.js"></script><script src="app.js"></script>
+</body></html>
